@@ -113,14 +113,23 @@
     footer { border-top: 1px solid var(--border); padding: 40px 24px; text-align: center; color: var(--muted); font-size: 13px; font-family: 'DM Mono', monospace; }
     footer span { color: var(--green); }
     .divider { height: 1px; background: var(--border); max-width: 1000px; margin: 0 auto; }
+    .nav-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 16px 32px; display: flex; align-items: center; background: rgba(13,27,42,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-bar img { height: 0px; width: auto; }
+    .hero-logo { margin-bottom: 0px; animation: fadeUp .5s ease both; }
+    .hero-logo img { height: 290px; width: auto; filter: drop-shadow(0 0 80px rgba(6,975,0,2.9)); }
   </style>
 </head>
 <body>
 
-<div class="hero">
+<nav class="nav-bar">
+  <img src="logo.png" alt="Mantto"/>
+</nav>
+
+<div class="hero" style="padding-top: 100px;">
   <div class="grid-bg"></div>
   <div class="hero-inner">
-    <div class="badge"><span class="dot"></span>Sistema em produção · desde out/2025</div>
+    <div class="hero-logo"><img src="logo.png" alt="Mantto"/></div>
+    <div class="badge"><span class="dot"></span>Gestão de Manutenção </div>
     <h1>Mantto</h1>
     <p class="hero-sub">Sistema web de <strong>gestão de manutenção industrial</strong> desenvolvido por um mecânico que entendeu o problema fundo o suficiente para construir a solução.</p>
     <div class="tags">
@@ -136,7 +145,7 @@
 
 <div class="stats">
   <div class="stat"><div class="stat-value">54</div><div class="stat-label">Equipamentos cadastrados</div></div>
-  <div class="stat"><div class="stat-value">80</div><div class="stat-label">Ordens de serviço geradas</div></div>
+  <div class="stat"><div class="stat-value">99</div><div class="stat-label">Ordens de serviço geradas</div></div>
   <div class="stat"><div class="stat-value blue">4</div><div class="stat-label">Meses em produção</div></div>
   <div class="stat"><div class="stat-value">100%</div><div class="stat-label">Taxa de confiabilidade</div></div>
   <div class="stat"><div class="stat-value">↓</div><div class="stat-label">Corretivas em queda</div></div>
